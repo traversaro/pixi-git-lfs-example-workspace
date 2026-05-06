@@ -7,8 +7,9 @@ on:
 permissions:
   contents: read
 
-env:
-  UV_GIT_LFS: 1
+# Comment out to fix pypi test
+# env:
+#  UV_GIT_LFS: 1
 
 jobs:
   check:
