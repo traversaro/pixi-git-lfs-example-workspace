@@ -30,6 +30,8 @@ jobs:
         with:
           environments: ${{ matrix.environment }}
           pixi-version: v0.67.2
+          # Disable cache as otherwise a past successful run could hide the failure
+          cache: false
           working-directory: .
 
       - name: Run STL check
