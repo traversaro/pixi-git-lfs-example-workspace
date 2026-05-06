@@ -1,0 +1,21 @@
+[workspace]
+name = "pixi-git-lfs-example-workspace"
+version = "0.1.0"
+description = "Workspace to reproduce the Pixi Git LFS issue (https://github.com/prefix-dev/pixi/issues/2000)"
+authors = ["Silvio Traversaro <info@example.com>"]
+channels = ["conda-forge"]
+platforms = ["linux-64"]
+preview = ["pixi-build"]
+
+[dependencies]
+python = ">=3.8"
+
+[feature.pypi.pypi-dependencies]
+pixi-git-lfs-example = { git = "https://github.com/traversaro/pixi-git-lfs-example-package.git", branch = "main" }
+
+[feature.pixi-build.dependencies]
+pixi-git-lfs-example-package = { git = "https://github.com/traversaro/pixi-git-lfs-example-package.git", branch = "main" }
+
+[environments]
+pypi = { features = ["pypi"] }
+pixi-build = { features = ["pixi-build"] }
