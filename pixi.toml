@@ -11,7 +11,7 @@ preview = ["pixi-build"]
 python = ">=3.8"
 
 [feature.pypi.pypi-dependencies]
-pixi-git-lfs-example = { git = "https://github.com/traversaro/pixi-git-lfs-example-package.git#lfs=true", branch = "main" }
+pixi-git-lfs-example = { git = "https://github.com/traversaro/pixi-git-lfs-example-package.git", branch = "main" }
 
 [feature.pixi-build.dependencies]
 pixi-git-lfs-example-package = { git = "https://github.com/traversaro/pixi-git-lfs-example-package.git", branch = "main" }
