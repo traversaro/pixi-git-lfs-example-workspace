@@ -3,6 +3,7 @@
 A test workspace for reproducing struggles of using git dependencies that use Git LFS, both via pypi and pixi-build, related issues:
 
 * https://github.com/prefix-dev/pixi/issues/2000
+* https://github.com/prefix-dev/pixi/issues/6024
 
 ## Overview
 
